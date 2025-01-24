@@ -28,35 +28,33 @@ Ensure you have the following installed:
 ```bash
 git clone https://github.com/your-username/folder-generator.git
 cd folder-generator
-
-
+```
+---
 ### Step 2: Run the Script
 - Open a terminal or command prompt.
 - Navigate to the folder containing the script (e.g., folder_generator.py).
 - Execute the script by running:
 ```bash
 python folder_generator.py
-Step 3: Input the Folder Structure
+```
+---
+### Step 3: Input the Folder Structure
 When prompted, enter your desired folder structure. Use 2 spaces for each level of indentation to define subfolders. For example:
-
-plaintext
-Copy
-Edit
+```bash
 project-name2
   src
   hello
     new
     one
+```
 Press Enter on a blank line to finish the input.
 
-Step 4: View the Created Folder Structure
+---
+### Step 4: View the Created Folder Structure
 The script will create the folder structure on your Desktop inside a folder named project-name2.
-
 Example
 Input:
-plaintext
-Copy
-Edit
+```bash
 project-name2
   docs
   src
@@ -67,10 +65,9 @@ project-name2
   tests
   config
   build
+```
 Output Folder Structure:
-plaintext
-Copy
-Edit
+```bash
 Desktop/
   project-name2/
     docs/
@@ -82,12 +79,11 @@ Desktop/
     tests/
     config/
     build/
-Debugging
+```
+---
+## Debugging
 The script provides real-time debugging messages to ensure the folder structure is created correctly. Example messages:
-
-plaintext
-Copy
-Edit
+```bash
 Processing: 'project-name2' at depth 0
 Creating folder: C:\Users\YourName\Desktop\project-name2
 Processing: 'src' at depth 1
@@ -98,35 +94,28 @@ Processing: 'new' at depth 2
 Creating folder: C:\Users\YourName\Desktop\project-name2\hello\new
 Processing: 'one' at depth 2
 Creating folder: C:\Users\YourName\Desktop\project-name2\hello\one
-Troubleshooting
-Folder structure not created properly:
+```
+---
+## Troubleshooting
+-Folder structure not created properly:
+  -Ensure you are using 2 spaces per indentation level.
+  -Check for mixed indentation (e.g., spaces vs tabs).
 
-Ensure you are using 2 spaces per indentation level.
-Check for mixed indentation (e.g., spaces vs tabs).
-Empty output folder:
+-Empty output folder:
+  -Ensure you pressed Enter on a blank line to finish the input.
+  -Script not running:
 
-Ensure you pressed Enter on a blank line to finish the input.
-Script not running:
+-Ensure Python is installed and added to your system PATH.
 
-Ensure Python is installed and added to your system PATH.
-Contribution
+---
+## Contribution
 Contributions are welcome! Feel free to fork the repository and submit a pull request with improvements or additional features.
 
-Fork and Submit PR
-bash
-Copy
-Edit
-git fork https://github.com/your-username/folder-generator.git
-# Make your changes
-# Submit a pull request
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Author
-Developed by Your Name.
+---
+### Make your changes
+### Submit a pull request
+---
+## Author
+Developed by Jal Bafana.
 
 Happy coding! 🚀
-
-kotlin
-Copy
-Edit
