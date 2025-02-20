@@ -1,14 +1,15 @@
-# Folder Generator
+# Folder Generator (v3)
 
-This **Python script** allows you to create a folder structure dynamically based on an input hierarchy provided by the user. The structure is created recursively with proper folder depth and hierarchy, making it ideal for setting up project directories efficiently.
+This **Python script** provides an intuitive graphical user interface (GUI) to create folder structures dynamically. Users can select a base directory and define a folder hierarchy using indentation. The script then generates the folders accordingly.
 
 ---
 
 ## Features
 
-- ✅ Dynamically generates folder structures based on user input.
-- ✅ Supports hierarchical indentation to define subfolder depth.
-- ✅ Handles incorrect folder depth issues with clear debugging messages.
+- ✅ **User-friendly GUI** built with Tkinter.
+- ✅ **Directory selection** via a file browser.
+- ✅ **Real-time text input** for defining folder structures.
+- ✅ **Error handling** for invalid paths.
 - ✅ Works across platforms (**Windows**, **macOS**, **Linux**).
 
 ---
@@ -18,44 +19,76 @@ This **Python script** allows you to create a folder structure dynamically based
 Ensure you have the following installed:
 
 - **Python 3.6 or later**
+- **Tkinter** (Included with standard Python installations)
 
 ---
 
-## Usage Instructions
+## Installation
 
-### **Step 1: Clone or Download the Repository**
+Clone or download the repository:
 
 ```bash
 git clone https://github.com/your-username/folder-generator.git
 cd folder-generator
 ```
+
+Install dependencies (if needed):
+
+```bash
+pip install tk
+```
+
 ---
-### Step 2: Run the Script
+
+## Usage Instructions
+
+### Step 1: Run the Script
+
 - Open a terminal or command prompt.
-- Navigate to the folder containing the script (e.g., folder_generator.py).
-- Execute the script by running:
+- Navigate to the script folder.
+- Execute:
+
 ```bash
 python folder_generator.py
 ```
+
 ---
-### Step 3: Input the Folder Structure
-When prompted, enter your desired folder structure. Use 2 spaces for each level of indentation to define subfolders. For example:
-```bash
-project-name2
+
+### Step 2: Select the Base Directory
+
+- Click the **"Browse"** button to select the base directory where the folders should be created.
+
+---
+
+### Step 3: Enter the Folder Structure
+
+- Type your desired folder structure in the text box.
+- Use **2 spaces** per indentation level to define subfolders.
+- Example:
+
+```
+project-name
   src
   hello
     new
     one
 ```
-Press Enter on a blank line to finish the input.
 
 ---
-### Step 4: View the Created Folder Structure
-The script will create the folder structure on your Desktop inside a folder named project-name2.
-Example
-Input:
-```bash
-project-name2
+
+### Step 4: Click "Create Folders"
+
+- The script will generate the folder structure in the selected base directory.
+- A confirmation message will appear upon successful creation.
+
+---
+
+## Example Output Structure
+
+### Input:
+
+```
+project-name
   docs
   src
     assets
@@ -66,10 +99,12 @@ project-name2
   config
   build
 ```
-Output Folder Structure:
-```bash
-Desktop/
-  project-name2/
+
+### Output Folder Structure:
+
+```
+Base Directory/
+  project-name/
     docs/
     src/
       assets/
@@ -80,42 +115,31 @@ Desktop/
     config/
     build/
 ```
+
 ---
-## Debugging
-The script provides real-time debugging messages to ensure the folder structure is created correctly. Example messages:
-```bash
-Processing: 'project-name2' at depth 0
-Creating folder: C:\Users\YourName\Desktop\project-name2
-Processing: 'src' at depth 1
-Creating folder: C:\Users\YourName\Desktop\project-name2\src
-Processing: 'hello' at depth 1
-Creating folder: C:\Users\YourName\Desktop\project-name2\hello
-Processing: 'new' at depth 2
-Creating folder: C:\Users\YourName\Desktop\project-name2\hello\new
-Processing: 'one' at depth 2
-Creating folder: C:\Users\YourName\Desktop\project-name2\hello\one
-```
----
+
 ## Troubleshooting
--Folder structure not created properly:
-  -Ensure you are using 2 spaces per indentation level.
-  -Check for mixed indentation (e.g., spaces vs tabs).
 
--Empty output folder:
-  -Ensure you pressed Enter on a blank line to finish the input.
-  -Script not running:
+- **Folders not created properly:**
+  - Ensure you are using **2 spaces** per indentation level.
+  - Avoid mixed indentation (spaces vs tabs).
 
--Ensure Python is installed and added to your system PATH.
+- **Script not running:**
+  - Ensure Python is installed and added to your system PATH.
+
+- **Incorrect base directory:**
+  - Verify the selected path in the GUI.
 
 ---
+
 ## Contribution
-Contributions are welcome! Feel free to fork the repository and submit a pull request with improvements or additional features.
+
+Contributions are welcome! Fork the repository and submit a pull request with improvements or additional features.
 
 ---
-### Make your changes
-### Submit a pull request
----
+
 ## Author
+
 Developed by Jal Bafana.
 
 Happy coding! 🚀
